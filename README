@@ -1,0 +1,75 @@
+Esta guia ha sido creada como trabajo fin de grado.
+La guía aborda la herramienta de nftables, no solo desde un punto de vista teórico, sino también desde un punto de vista práctico.
+La guía tiene detallado en los anexos las versiones usadas tanto de la herramienta como de los S.O para realizar un laboratorio de pruebas.
+El índice de la guía que puede interesar al lector comienzan a partir del punto 3 y son los siguientes:
+
+3. Nftables Introducción
+3.1 Instalación Nftables 7
+3.2 Construcción básica nftables 10
+3.2.1 Tablas 12
+3.2.2 Cadenas y Hooks 12
+3.2.3 Reglas básicas 21
+
+4. Flow de paquetes en nftables
+4.1 Diagrama Flujo de paquetes 33
+4.1.1 Camino Bridge 34
+4.1.2 Camino ARP 34
+4.1.3 Camino Ip 35
+4.2 Escenario pruebas flow paquetes. 36
+4.2.1 Ejemplo flow paquetes. 36
+4.3 Escenario prueba flow interfaz lo 44
+4.3.1 Ejemplo flow interfaz lo. 44 
+
+5. Managers 51
+5.1 Firewalld 51
+5.1.1 Escenario de Pruebas 52 
+
+5. Seguimiento de Conexiones(Conntrack) 61
+6.1 Máquina de estados. 61
+6.1.1 Ejemplo de clasificación de estados 64
+6.2 Connection tracking Linux 66
+6.2.1 Entrada conntrack TCP 69
+6.2.2 Entrada conntrack UDP 71
+6.2.3 Entrada conntrack ICMP 72
+6.2.4 Ejemplo de Seguimiento de Conexiones 75
+6.3 TCP Conntrack 79
+6.3.1 Ejemplo conntrack TCP. 80
+6.3.2 Ejemplo conntrack TCP invalid. 90
+6.4 UDP Conntrack 97
+6.4.1 Ejemplo UDP conntrack. 98
+6.5 ICMP Conntrack 102
+6.5.1 Ejemplo ICMP conntrack. 102
+6.5.2 Ejemplo ICMP conntrack reject. 106
+6.6 Parámetros Conntrack 111
+6.7 Helpers 115
+6.8 Pruebas escenario con módulo ct (Connection Tracking) 129
+6.8.1 Ejemplo mark 129
+6.8.2 Ejemplo state 132 
+
+7. Traducción de direcciones (NAT) 137
+7.1 Snat y Masquerade 137
+7.1.1 Ejemplo Snat 137
+7.1.2 Ejemplo Masquerade 144
+7.2 Dnat y Redirect 147
+7.2.1 Ejemplo Redirect 148
+7.3 El módulo conntrack en NAT 151
+7.3.1 Stateless NAT 151
+7.3.2 Stateful NAT 156
+7.4 Ejemplo Redirect en Prerouting 163
+7.5 Ejemplo Redirect en Output 170
+7.6 Ejemplo NAT Asimétrico 176 
+
+8.Filtrado de paquetes 185
+8.1 Conjuntos Dinámicos 185
+8.1.1 Ejemplo de port-knocking 186
+8.2 Mapas Dinámicos 192
+8.2.1 Ejemplo mapa direcciones Ip 193
+8.2.2 Ejemplo mapa protocolos 196
+8.3 Medidas de tráfico 201
+8.3.1 Limitación de ratio 201
+8.3.2 Quotas 203
+8.3.3 Contadores nombrados 206
+8.4 Ejemplo lista negra 208
+
+
+Espero que esta guía, sirva para aclarar el uso de la herramienta y así resulte más sencillo la realización de pruebas con la misma.
